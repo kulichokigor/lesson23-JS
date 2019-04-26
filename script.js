@@ -18,6 +18,7 @@ var day = date.getDay();
 console.log(days[day]);
 
 //*Завдання 4
+
 var date = new Date();
 var age = new Date(prompt('введите свой день рождения', '1990-10-01'));
 var time = new Date(date.getFullYear(), age.getMonth(), age.getDate(), 0,0,0);
@@ -29,4 +30,7 @@ if(result < 0){
 	alert('До Вашого дня народження залишилось: ' + birthDay + ' днів!')
 }else if(result > 0){
 	alert('До Вашого дня народження залишилось: ' + result + ' днів!')
-}else(alert('З днем народження!'));
+}else if(result == 0)
+	{alert( 'З днем народження!' )
+}else( alert('Не вірний формат вводу') );
+
